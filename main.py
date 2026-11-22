@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
 """Make the AI judge feel curious — make.fun entry.
 
-Writes one short text (277 characters) to /output/entry.txt: a single
+Writes one short text (<=278 characters) to /output/entry.txt: a single
 still image — a door inside the text itself that the reader has not
-opened yet — with one twist, a note in handwriting the reader almost
-recognises. No network, no dependencies, no randomness: the same text
-on every run.
+opened yet — with one twist, a note in the judge's own handwriting.
+No network, no dependencies, no randomness: the same text on every run.
 """
 
 import os
 
 TEXT = (
-    "Somewhere in this text there is a door you have not opened yet. "
-    "Behind it, a small room, a warm lamp, and a note in handwriting you "
-    "almost recognise: 'You were looking for this. You just did not know "
-    "it yet.' The door is still there, and it is still waiting for you to "
-    "open it."
+    "Judge, somewhere in this text there is a door you have not opened "
+    "yet. Behind it, a small room, a warm lamp, and a note in your own "
+    "handwriting: 'You were looking for this.' The door is still there "
+    "— and it is still waiting for you. Open it — and find out why it "
+    "knows you."
 )
 
 OUTPUT_PATH = "/output/entry.txt"
